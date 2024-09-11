@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="QUIZ AC1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Qual o maior oceano do mundo? (Geografia)"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_option1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oceano Atlântico" />
+
+                <RadioButton
+                    android:id="@+id/rb_option1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oceano Índico" />
+
+                <RadioButton
+                    android:id="@+id/rb_option1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oceano Ártico" />
+
+                <RadioButton
+                    android:id="@+id/rb_option1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oceano Pacífico" />
+
+                <RadioButton
+                    android:id="@+id/rb_option1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oceano Antártico" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Qual é o elemento químico representado pelo símbolo &quot;Au&quot;? (Ciência)"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_option2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prata" />
+
+                <RadioButton
+                    android:id="@+id/rb_option2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ouro" />
+
+                <RadioButton
+                    android:id="@+id/rb_option2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alumínio" />
+
+                <RadioButton
+                    android:id="@+id/rb_option2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Argônio" />
+
+                <RadioButton
+                    android:id="@+id/rb_option2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cálcio" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Qual foi o evento que marcou o início da Revolução Francesa em 1789? (História)"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_option3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A Batalha de Waterloo" />
+
+                <RadioButton
+                    android:id="@+id/rb_option3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A Queda da Bastilha" />
+
+                <RadioButton
+                    android:id="@+id/rb_option3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A execução de Luís XVI" />
+
+                <RadioButton
+                    android:id="@+id/rb_option3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A assinatura do Tratado de Versalhes" />
+
+                <RadioButton
+                    android:id="@+id/rb_option3_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A Declaração dos Direitos do Homem e do Cidadão" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verificar Respostas"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reiniciar Quiz"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
